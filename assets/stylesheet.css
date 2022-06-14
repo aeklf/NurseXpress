@@ -11,6 +11,7 @@
 
 body {
   scroll-behavior: smooth;
+  justify-content: space-between;
 }
 
 .navbar {
@@ -61,11 +62,8 @@ body {
   background-color: rgb(235, 235, 235);
 }
 
-.section {
-  background: rgb(174, 198, 238);
-}
-
-#home {
+#home,
+body {
   background: linear-gradient(to right, #97dd9c, #0de387, #4bc0c8);
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
@@ -135,6 +133,70 @@ h2,
   margin-bottom: 1rem;
 }
 
+/* CONTACT FORM */
+
+#contact {
+  margin-top: 20px;
+}
+
+.formContainer {
+  display: flex;
+}
+
+.rightContainer {
+  display: flex;
+  flex: 1;
+  height: 460px;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightInnerContainer {
+  width: 70%;
+  height: 80%;
+  text-align: center;
+}
+
+.leftInnerContainer {
+  height: 50%;
+  width: 80%;
+  text-align: center;
+  line-height: 22px;
+}
+
+input,
+textarea {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid;
+}
+
+button {
+  border-radius: 20px;
+  border: 1px solid;
+  border-color: #4bc0c8;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
 /* MEDIA QUERIES */
 
 @media all and (max-width: 900px) {
@@ -144,5 +206,20 @@ h2,
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .left-container {
+    display: none;
+  }
+  .lg-view {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .sm-view {
+    display: none;
   }
 }
