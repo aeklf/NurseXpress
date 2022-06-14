@@ -133,6 +133,31 @@ h2,
   margin-bottom: 1rem;
 }
 
+/* ABOUT PAGE */
+
+#aboutPage {
+  color: aliceblue;
+  margin-top: 70px;
+  max-width: 700px;
+  max-height: 500px;
+}
+
+.about {
+  justify-content: center;
+  color: aliceblue;
+}
+
+#aboutText {
+  justify-content: center;
+  text-align: center;
+}
+
+#aboutImg {
+  max-width: 650px;
+  max-height: fit-content;
+  justify-content: center;
+}
+
 /* CONTACT FORM */
 
 #contact {
@@ -183,7 +208,7 @@ button {
   border-radius: 20px;
   border: 1px solid;
   border-color: #4bc0c8;
-  color: #ffffff;
+  color: #4bc0c8;
   font-size: 12px;
   font-weight: bold;
   padding: 12px 45px;
