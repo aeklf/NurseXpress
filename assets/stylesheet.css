@@ -119,6 +119,8 @@ h1 {
   max-width: 100%;
   min-height: 300px;
   min-width: 200px;
+  align-items: center;
+  justify-content: center;
 }
 
 #serviceText {
@@ -126,11 +128,33 @@ h1 {
   margin-bottom: 30px;
 }
 
-h2,
 .service {
   color: aliceblue;
   font-size: 12px;
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.serviceTxt {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  font-size: 20px;
+  display: flex;
+}
+
+.serviceImg {
+  border-radius: 50%;
+  max-height: 200px;
+  max-width: 200px;
+  margin-left: auto;
+  display: flex;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
 }
 
 /* ABOUT PAGE */
