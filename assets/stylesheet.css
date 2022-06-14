@@ -66,13 +66,13 @@ body {
 }
 
 #home {
-  background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
+  background: linear-gradient(to right, #97dd9c, #0de387, #4bc0c8);
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
 }
 
 .homeText {
-  background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
+  background: linear-gradient(to right, #97dd9c, #0de387, #4bc0c8);
   -webkit-text-fill-color: transparent;
   width: 100%;
   text-align: center;
