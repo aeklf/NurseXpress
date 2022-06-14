@@ -1,0 +1,98 @@
+/* MAIN STYLING */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+  box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  position: fixed;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.logo h1 {
+  cursor: pointer;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navLink {
+  margin: 0 10px;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 100px;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+}
+
+.navLink.active,
+.navLink:hover {
+  background-color: rgba(174, 198, 238, 1);
+  color: white;
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section:nth-child(odd) {
+  background-color: rgb(235, 235, 235);
+}
+
+.section {
+  background: rgb(174, 198, 238);
+}
+
+#home {
+  background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+}
+
+.homeText {
+  background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
+  -webkit-text-fill-color: transparent;
+  width: 100%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+}
