@@ -46,7 +46,7 @@ body {
 
 .navLink.active,
 .navLink:hover {
-  background-color: rgba(174, 198, 238, 1);
+  background-color: #0de387;
   color: white;
 }
 
@@ -93,6 +93,56 @@ body {
 
 h1 {
   text-align: center;
-  margin-top: 10px;
   font-family: "Poppins", sans-serif;
+}
+
+#services {
+  text-align: center;
+  columns: 3;
+  margin: 10px;
+  display: inline-flex;
+  display: inline-block;
+  justify-content: space-evenly;
+  width: 30%;
+  padding: 30px 10px;
+}
+
+#wrapper {
+  overflow: auto;
+  width: 80%;
+}
+
+.container {
+  border-radius: 5px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 300px;
+  min-width: 200px;
+}
+
+#serviceText {
+  color: aliceblue;
+  margin-bottom: 30px;
+}
+
+h2,
+.service {
+  color: aliceblue;
+  font-size: 12px;
+  margin-bottom: 1rem;
+}
+
+/* MEDIA QUERIES */
+
+@media all and (max-width: 900px) {
+  .services-grid {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
 }

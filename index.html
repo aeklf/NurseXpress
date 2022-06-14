@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
 </head>
 
-<navbar>
+<navbar class="navbar">
     <div class="logo">
         <h1>Name</h1>
     </div>
 
     <div class="navlinks">
         <a href="#home" class="navLink">Home</a>
+        <a href="#register" class="navLink">Log In/Register</a>
         <a href="#about" class="navLink">About</a>
         <a href="#contact" class="navLink">Contact</a>
     </div>
@@ -24,8 +25,23 @@
 <body>
 
 <div id="home" class="section">
-        <h1>What service are you looking for?</h1>
-    </div>
+    <div id="wrapper">
+    <h1 id="serviceText">What service are you looking for?</h1>
+    <section class="container" id="services">
+        <div class="service">
+            <h2>Full Rehydration Service</h2>
+        </div>
+    </section>
+    <section class="container" id="services">
+        <div class="service">
+            <h2>Injection Assistance</h2>
+        </div>
+    </section>
+    <section class="container" id="services">
+        <div class="service">
+            <h2>Special Attention</h2>
+        </div>
+    </section>
 </div>
 
 </body>
