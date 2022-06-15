@@ -398,6 +398,10 @@ button:hover {
   margin: 1rem 0 0.6rem;
 }
 
+.nurseItem:hover {
+  border: 2px solid #0de387;
+}
+
 /* MEDIA QUERIES */
 
 @media all and (max-width: 900px) {
