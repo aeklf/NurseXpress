@@ -402,6 +402,19 @@ button:hover {
   border: 2px solid #0de387;
 }
 
+/* SCHEDULING SECTION */
+
+#scheduleGrid h4 {
+  font-weight: 600;
+  color: aliceblue;
+  font-size: 1.3rem;
+  margin: 1rem 0 0.6rem;
+}
+
+#scheduleGrid {
+  margin-top: 50px;
+}
+
 /* MEDIA QUERIES */
 
 @media all and (max-width: 900px) {
