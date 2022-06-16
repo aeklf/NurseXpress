@@ -12,6 +12,10 @@ Cities.init(
             autoIncrement: true,
             primaryKey: true
         },
+        state: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
         city: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -30,11 +34,8 @@ Cities.init(
             validate: {
                 isDecimal: true
             }
-        },
-        state: {
-            type: DataTypes.STRING,
-            allowNull: false,
         }
+        
     },
     {
         sequelize,
