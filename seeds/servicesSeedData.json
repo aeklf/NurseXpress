@@ -22,7 +22,7 @@
     },
     {
         "name": "Resurrection",
-        "description": "Mix of every plan",
+        "description": "Mix of every other plan",
         "price": 125,
         "active_status": true,
         "employee_id": 3
