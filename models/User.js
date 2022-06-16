@@ -24,7 +24,7 @@ User.init(
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                len: [6, 32]
+                len: [8]
             }
         },
         first_name: {
