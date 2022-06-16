@@ -31,14 +31,15 @@ User.init(
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                is: /^[a-z]+$/i,
+                is: /^[a-z]+$/i
             }
         },
         last_name: {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                is: /^[a-z]+$/i,
+                notEmpty: true,
+                is: /^[a-z]+$/i
             }
         }
     },

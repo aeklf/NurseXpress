@@ -2,12 +2,12 @@
     {
         "email": "test@test.com",
         "password": "1234",
-        "first_name": "John",
+        "first_name": "Joh1n",
         "last_name": "Doe"
 
     },
     {
-        "email": "test@test.com",
+        "email": "test4@test.com",
         "password": "1234",
         "first_name": "John",
         "last_name": "Doe"
