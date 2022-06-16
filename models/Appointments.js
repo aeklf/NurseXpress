@@ -33,7 +33,7 @@ Appointments.init(
             type: DataTypes.TIME,
             allowNull: false
         },
-        location: {
+        location_id: {
             type: DataTypes.STRING,
             references: {
                 model: 'cities',
