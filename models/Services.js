@@ -33,7 +33,7 @@ Service.init(
         employee_id: {
             type: DataTypes.INTEGER,
             references: {
-                model: 'empployee',
+                model: 'employee',
                 key: 'id',
             },
         },
