@@ -21,14 +21,14 @@ Cities.init(
             allowNull: false,
             unique: true,
         },
-        latitud: {
+        lat: {
             type: DataTypes.DECIMAL,
             allowNull: false,
             validate: {
                 isDecimal: true,
             }
         },
-        longitude: {
+        long: {
             type: DataTypes.DECIMAL,
             allowNull: false,
             validate: {
