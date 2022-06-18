@@ -16,4 +16,6 @@ router.use('/users', userRoutes);
 
 router.use('/services', serviceRoutes);
 
+router.use('/employees', employeesRoutes);
+
 module.exports = router;
