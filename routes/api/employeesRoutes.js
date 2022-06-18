@@ -1,5 +1,6 @@
-const router = require("express").router();
+const router = require("express").Router();
 const Employee = require("../../models/Employee");
+
 
 router.get('/:id', async (req, res) => {
     try {
