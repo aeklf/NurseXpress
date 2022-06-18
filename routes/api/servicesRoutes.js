@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const Service = require('../../models/Services');
-const { Employee } = require('../../models');
+const Employee = require('../../models/Employee');
 
 //Get all Services
 router.get('/', async (req, res) => {
@@ -14,7 +14,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-//Get services by ID
+//Get service by ID
 router.get('/:id', async (req, res) => {
     try {
         const serviceById = await Service.findByPk(req.params.id, {
