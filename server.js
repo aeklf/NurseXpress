@@ -2,7 +2,8 @@ const express = require('express');
 // const routes = require('./routes');
 
 //Import all routes
-const routes = require('./routes')
+const routes = require('./routes');
+
 //Import sequalize conecction
 const sequelize = require('./config/connection');
 
@@ -14,7 +15,6 @@ app.use(express.urlencoded({ extended: true }));
 
 // turn on routes
 app.use(routes);
-
 
 
 
