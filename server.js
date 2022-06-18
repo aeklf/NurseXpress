@@ -1,7 +1,10 @@
 const express = require('express');
 // const routes = require('./routes');
+
+//Import all routes
+const routes = require('./routes')
+//Import sequalize conecction
 const sequelize = require('./config/connection');
-const routes = require('./routes/index')
 
 const app = express();
 const PORT = process.env.PORT || 3001;
