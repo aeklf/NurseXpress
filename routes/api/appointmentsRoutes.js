@@ -1,9 +1,9 @@
 const router = require('express').Router();
-const {Appointments, Employee, User, Cities} = require('../../models/Appointments');
+const Appointments = require('../../models/Appointments');
 
 
     
-router.post('/appointments', async (req, res) => {
-    Appointments.create()
+router.post('/', async (req, res) => {
+    Appointments.findByPk(req.params.id)
 })
 module.exports = router;
