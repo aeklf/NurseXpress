@@ -67,6 +67,11 @@ body {
   color: white;
 }
 
+#popup-login:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .section {
   min-height: 100vh;
   display: -webkit-box;
@@ -85,10 +90,11 @@ body {
 }
 
 .popup-form {
-  display: none;
   position: fixed;
+  z-index: 2;
   right: 0;
   width: 30%;
+  display: none;
 }
 
 .log-container {
@@ -126,10 +132,11 @@ body {
 }
 
 .container-forms .inner-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 200%;
+}
+
+.container-forms .inner-form .nurse-form {
+  display: none;
 }
 
 .container-forms .inner-form form {

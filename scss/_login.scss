@@ -1,12 +1,11 @@
 // Pop up Login
 .popup-form {
-    display: none;
     position: fixed;
+    z-index: 2;
     right: 0;
     width: 30%;
-    
+    display: none;
 }
-
 
 
 // User and Nurse Register Forms
@@ -17,6 +16,7 @@
     padding: 15px;
     border-radius: 10px;
     overflow: hidden;
+    
 
         .title {
             width: 100%;
@@ -41,8 +41,11 @@
 
 .container-forms {
     .inner-form {
-        display: flex;
         width: 200%;
+
+        .nurse-form{
+            display:none;
+        }
             form {
                 width: 50%;
                     input {

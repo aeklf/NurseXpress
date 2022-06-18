@@ -54,6 +54,14 @@ body {
     
 }
 
+#popup-login {
+    
+    &:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
 .section {
         min-height: 100vh;
         display: flex;
