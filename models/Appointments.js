@@ -12,14 +12,14 @@ Appointments.init(
             primaryKey: true
         },
         employee_id: {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
             references: {
                 model: 'employee',
                 key: 'id'
             },
         },
         user_id: {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
             references: {
                 model: 'user',
                 key: 'id'
@@ -34,7 +34,7 @@ Appointments.init(
             allowNull: false
         },
         location_id: {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
             references: {
                 model: 'cities',
                 key: 'id',

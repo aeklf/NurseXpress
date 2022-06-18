@@ -3,7 +3,7 @@ const Appointments = require('../../models/Appointments');
 
 
     
-router.post('/', async (req, res) => {
-    Appointments.findByPk(req.params.id)
+router.post('/appointments', async (req, res) => {
+    Appointments.create()
 })
 module.exports = router;
