@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('./../config/connection');
-const bcrypt = require('bcrypt');
+
 
 class Cities extends Model {};
 
@@ -35,7 +35,6 @@ Cities.init(
                 isDecimal: true
             }
         }
-        
     },
     {
         sequelize,

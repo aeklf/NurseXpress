@@ -42,8 +42,8 @@ Employee.init(
                 is: /^[a-z]+$/i
             }
         },
-        citie_id:{
-            type: DataTypes.STRING,
+        city_id:{
+            type: DataTypes.INTEGER,
             references: {
                 model: 'cities',
                 key: 'id'
