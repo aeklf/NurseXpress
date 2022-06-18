@@ -42,13 +42,23 @@ Employee.init(
                 is: /^[a-z]+$/i
             }
         },
+        citie_id:{
+            type: DataTypes.STRING,
+            references: {
+                model: 'cities',
+                key: 'id'
+            }
+        },
         available_schedule: {
             type: DataTypes.DATE,
             allowNull: false,
             validate: {
                 isDate: true
             }
-        }
+        },
+        
+        
+    
     },
     {
         hooks: {
