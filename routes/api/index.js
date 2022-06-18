@@ -8,7 +8,7 @@ const appointmentsRoutes = require('./appointmentsRoutes');
 router.use('/users', userRoutes);
 router.use('/services', serviceRoutes);
 router.use('/employees', employeeRoutes);
-router.use('./cities', citiesRoutes);
-router.use('./appointments', appointmentsRoutes);
+router.use('/cities', citiesRoutes);
+router.use('/appointments', appointmentsRoutes);
 
 module.exports = router;
