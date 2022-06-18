@@ -3,12 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0!"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title></title>
     <link href="../css/stylesheet.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <title>Log in and register form</title>
 </head>
 
+<body>
+    
 <navbar class="navbar">
     <div class="logo">
         <h1>NurseXpress</h1>
@@ -22,7 +26,64 @@
     </div>
 </navbar>
 
-    <script src="../js/index.js"></script>
+<section>
+<div class="log-container">
+
+        <div class="title">Register as:</div>
+
+
+    <div class="container-forms">
+            <div class="slider">
+                <input type="radio" name="slider-option" id="user" checked>
+                <input type="radio" name="slider-option" id="nurse">
+                <label for="user" class="sliding user">User</label>
+                <label for="nurse" class="sliding nurse">Nurse</label>
+                <div class="tab-slider"></div>
+            </div>
+        <div class="inner-form">
+            
+            <form class="user-form" id="register" action="#" method="post" enctype="multipart/form-data" autocomplete="on">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name">
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone Number">
+                <label for="location">Location:</label>
+                <select name="location" id="location" placeholder="Estado" required>
+                    <option value="">None</option>
+                    <option value="state" id="state">Jalisco</option>
+                </select>
+                <input type="text" placeholder="Username" required>
+                <input type="text" placeholder="Password" required>
+                <input type="text" placeholder="Verify Password" required>
+                <input type="submit" name="new-user" id="new-user" value="Register">
+            </form>
+        
+
+            <form class="nurse-form" id="register" action="#" method="post" enctype="multipart/form-data" autocomplete="on">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name">
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone Number">
+                <label for="location">Location:</label>
+                <select name="location" id="location" placeholder="Estado" required>
+                    <option value="">None</option>
+                    <option value="cdmx" id="state">CDMX</option>
+                </select>
+                <input type="text" placeholder="Username" required>
+                <input type="text" placeholder="Password" required>
+                <input type="text" placeholder="Verify Password" required>
+                <input type="submit" name="new-user" id="new-user" value="Register">
+                
+            </form>
+        </div>
+    </div>
+
+</div>
+</section>
+
+
+<!-- <script src="../js/index.js"></script> -->
+<script src="../js/server.js"></script>
     
 </body>
 </html>
