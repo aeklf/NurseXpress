@@ -13,6 +13,7 @@
 
 <body>
     
+    
 <navbar class="navbar">
     <div class="logo">
         <h1>NurseXpress</h1>
@@ -42,6 +43,8 @@
     </div>
 </navbar>
 
+
+<!-- Form registers -->
 <section>
 <div class="log-container">
 
@@ -56,9 +59,10 @@
                 <label for="nurse" class="sliding nurse">Nurse</label>
                 <div class="tab-slider"></div>
             </div>
+
         <div class="inner-form">
-            
-            <form class="user-form" id="register" action="#" method="post" enctype="multipart/form-data" autocomplete="on">
+<!-- User Form -->
+            <form class="user-form" id="user-form" action="#" method="post" enctype="multipart/form-data" autocomplete="on">
                 <input type="text" placeholder="First Name" required>
                 <input type="text" placeholder="Last Name">
                 <input type="email" placeholder="Email" required>
@@ -73,9 +77,8 @@
                 <input type="text" placeholder="Verify Password" required>
                 <input type="submit" name="new-user" id="new-user" value="Register">
             </form>
-        
-
-            <form class="nurse-form" id="register" action="#" method="post" enctype="multipart/form-data" autocomplete="on">
+<!-- Nurse Form -->
+            <form class="nurse-form" id="nurse-form" action="#" method="post" enctype="multipart/form-data" autocomplete="on">
                 <input type="text" placeholder="First Name" required>
                 <input type="text" placeholder="Last Name">
                 <input type="email" placeholder="Email" required>
@@ -88,8 +91,7 @@
                 <input type="text" placeholder="Username" required>
                 <input type="text" placeholder="Password" required>
                 <input type="text" placeholder="Verify Password" required>
-                <input type="submit" name="new-user" id="new-user" value="Register">
-                
+                <input type="submit" name="new-user" id="new-user" value="Register">  
             </form>
         </div>
     </div>
@@ -98,8 +100,7 @@
 </section>
 
 
-<!-- <script src="../js/index.js"></script> -->
 <script src="../js/index.js"></script>
-    
+
 </body>
 </html>
