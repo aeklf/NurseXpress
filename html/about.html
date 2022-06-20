@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0!"/>
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>About Us</title>
+    <link rel="stylesheet" href="../css/style.css">
     <link href="../css/stylesheet.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
 </head>
@@ -16,7 +17,23 @@
 
     <div class="navlinks">
         <a href="../index.html" class="navLink">Home</a>
-        <a href="./login.html" class="navLink">Log In/Register</a>
+        <a class="navLink" id="popup-login">Log In/Register</a>
+        <div class="log-container popup-form" id="popup-form">
+            <div class="titles">
+                <div class="title login">Login</div>
+            </div>
+            <div class="container-forms">
+                <div class="inner-form">
+                    <form action="#" class="login" id="login" method="post" enctype="multipart/form-data" autocomplete="on">
+                        <input type="text" class="field" placeholder="Email" required>
+                        <input type="password" class="field" placeholder="Password" required>
+                        <div class="forgot-pwd"><a href="#">Forgot password?</a></div>
+                        <input type="submit" class="field" value="Login">
+                        <div class="register-link">Not a member? <a href="../html/register.html"> Register now</a> </div>
+                    </form>
+                </div>
+            </div>
+        </div>
         <a href="./about.html" class="navLink">About</a>
         <a href="./contact.html" class="navLink">Contact</a>
     </div>
