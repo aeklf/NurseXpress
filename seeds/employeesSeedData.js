@@ -6,7 +6,7 @@ const employeeData = [
         "password": "12345678",
         "first_name": "Lalito",
         "last_name": "Perez",
-        "citie_id": "1",
+        "city_id": "1",
         "available_schedule": "02/02/2022"
     },
     {
@@ -14,7 +14,7 @@ const employeeData = [
         "password": "12345678",
         "first_name": "Chanchito",
         "last_name": "Feliz",
-        "citie_id": "1",
+        "city_id": "2",
         "available_schedule": "02/02/2022"
     },
     {
@@ -22,7 +22,7 @@ const employeeData = [
         "password": "12345678",
         "first_name": "Jorge",
         "last_name": "Paredes",
-        "citie_id": "1",
+        "city_id": "3",
         "available_schedule": "02/02/2022"
     }
 ];

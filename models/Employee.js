@@ -55,9 +55,6 @@ Employee.init(
                 isDate: true
             }
         },
-        
-        
-    
     },
     {
         hooks: {
@@ -70,7 +67,6 @@ Employee.init(
                 return employeeInput;
             }
         },
-        
         sequelize,
         freezeTableName: true,
         timestamps: false,
