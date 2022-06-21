@@ -38,7 +38,6 @@ Employee.init(
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                notEmpty: true,
                 is: /^[a-z]+$/i
             }
         },

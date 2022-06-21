@@ -26,13 +26,18 @@ Appointments.init(
             },
         },
         service_id: {
-            type: DataTypes.STRING,
-            references: 'services',
-            key: 'id'
+            type: DataTypes.INTEGER,
+            references: {
+                model:'service',
+                key: 'id'
+            }
         },
         date: {
-            type: DataTypes.DATEONLY,
+            type: DataTypes.DATE,
             allowNull: false,
+            validate: {
+                isDate: true
+            }
         },
         hour: {
             type: DataTypes.TIME,

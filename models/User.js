@@ -46,7 +46,6 @@ User.init(
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                notEmpty: true,
                 is: /^[a-z]+$/i
             }
         },
@@ -57,7 +56,7 @@ User.init(
         },
         zipcode: {
             type: DataTypes.INTEGER,
-            allowNull: false
+            allowNull: false,
         },
     },
     {

@@ -20,7 +20,7 @@ app.use(routes);
 // turn on connection to db and server
 const init = async () => {
   try {
-    await sequelize.sync({force:false});
+    await sequelize.sync({force:true});
     console.log('Sucessful connection to the database');
     app.listen(PORT, () => console.log('Express web server now listening'));
   } catch (err) {

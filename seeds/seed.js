@@ -6,6 +6,7 @@ const seedEmployee = require('./employeesSeedData');
 const seedCities = require('./citiesSeedData');
 const seedUser = require('./userSeedData');
 const seedServices = require('./servicesSeedData');
+const seedAppointments = require('./appointmentsSeedData');
 
 const seedAll = async ()=>{
     await sequelize.sync({force:false});
@@ -21,6 +22,9 @@ const seedAll = async ()=>{
 
     await seedServices();
     console.log('\n----- Services SEEDED -----\n');
+    
+    await seedAppointments();
+    console.log('\n----- Appointments SEEDED -----\n');
 
     process.exit(0);
 }
