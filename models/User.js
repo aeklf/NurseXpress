@@ -49,7 +49,16 @@ User.init(
                 notEmpty: true,
                 is: /^[a-z]+$/i
             }
-        }
+        },
+        street_name_and_number: {
+            type: DataTypes.STRING,
+            allowNull: false,
+
+        },
+        zipcode: {
+            type: DataTypes.INTEGER,
+            allowNull: false
+        },
     },
     {
         hooks: {
