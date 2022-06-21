@@ -3,7 +3,7 @@ const Cities = require('./Cities');
 const Employee = require('./Employee');
 const Services = require('./services');
 const Appointment = require('./Appointments');
-const ServicesProvided = require('')
+const ServicesProvided = require('./ServicesProvided');
 
 //Employee -> Appointments One-to-many 
     Employee.hasMany(Appointment, {
@@ -30,7 +30,7 @@ const ServicesProvided = require('')
     Appointment.belongsTo(Cities, {
         foreignKey: 'location_id',
     });
-//Employee -> Services Many-to-Many
+//Employee <-> Services Many-to-Many
     Services.belongsToMany(Employee, {
         through: ServicesProvided,
     });
