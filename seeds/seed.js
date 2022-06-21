@@ -20,7 +20,7 @@ const seedAll = async ()=>{
     
     await seedCities();
     console.log('\n----- Cities SEEDED -----\n');
-
+    
     await seedServices();
     console.log('\n----- Services SEEDED -----\n');
     

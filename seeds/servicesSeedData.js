@@ -2,14 +2,14 @@ const Service = require('../models/Services');
 
 const serviceData = [
     {
-        "name": "Basic rehydration",
+        "name": "Basic Rehydration",
         "description": "IV fluids and electrolytes formulated for quick hydration.",
         "price": 50,
         "active_status": true,
         "employee_id": 1
     },
     {
-        "name": "Full recovery",
+        "name": "Full Recovery",
         "description": "IV fluids, electrolytes and vitamins formulated to overcome basic symptoms.",
         "price": 75,
         "active_status": true,

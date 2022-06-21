@@ -41,8 +41,9 @@ Employee.init(
                 is: /^[a-z]+$/i
             }
         },
-        city_id:{
+        city_id: {
             type: DataTypes.INTEGER,
+            allowNull: false,
             references: {
                 model: 'cities',
                 key: 'id'
@@ -54,7 +55,7 @@ Employee.init(
             validate: {
                 isDate: true
             }
-        },
+        }
     },
     {
         hooks: {

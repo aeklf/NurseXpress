@@ -12,6 +12,14 @@ const serviceProvidedData = [
     {
         "employee_id": 3,
         "service_id": 1
+    },
+    {
+        "employee_id": 1,
+        "service_id": 1
+    },
+    {
+        "employee_id": 1,
+        "service_id": 3
     }
 ];
 
