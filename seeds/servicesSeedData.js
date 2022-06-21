@@ -1,4 +1,6 @@
-[
+const Service = require('../models/Services');
+
+const serviceData = [
     {
         "name": "Basic rehydration",
         "description": "IV fluids and electrolytes formulated for quick hydration.",
@@ -27,4 +29,8 @@
         "active_status": true,
         "employee_id": 3
     }
-]
+];
+
+const seedServices = () => Service.bulkCreate(serviceData);
+
+module.exports = seedServices;
