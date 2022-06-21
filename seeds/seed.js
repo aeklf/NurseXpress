@@ -5,6 +5,7 @@ const sequelize = require('./../config/connection');
 const seedEmployee = require('./employeesSeedData');
 const seedCities = require('./citiesSeedData');
 const seedUser = require('./userSeedData');
+const seedServices = require('./servicesSeedData');
 
 const seedAll = async ()=>{
     await sequelize.sync({force:false});
@@ -17,6 +18,9 @@ const seedAll = async ()=>{
     
     await seedCities();
     console.log('\n----- Cities SEEDED -----\n');
+
+    await seedServices();
+    console.log('\n----- Services SEEDED -----\n');
 
     process.exit(0);
 }
