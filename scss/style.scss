@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
 * {
     padding: 0;
@@ -7,6 +12,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
 
 body {
     place-items: center;
@@ -72,5 +78,7 @@ body {
             background-color: rgb(235, 235, 235);
         }
     }
+
+
 
 @import 'login';

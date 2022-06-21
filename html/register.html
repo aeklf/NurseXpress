@@ -62,36 +62,34 @@
 
         <div class="inner-form">
 <!-- User Form -->
-            <form class="user-form" id="user-form" action="#" method="post" enctype="multipart/form-data" autocomplete="on">
-                <input type="text" placeholder="First Name" required>
-                <input type="text" placeholder="Last Name">
-                <input type="email" placeholder="Email" required>
-                <input type="tel" placeholder="Phone Number">
-                <label for="location">Location:</label>
+            <form class="user-form" id="user-form" action="/Users.js" method="post" enctype="multipart/form-data" autocomplete="on">
+                <input name="first_name" type="text" placeholder="First Name" required>
+                <input name="last_name" type="text" placeholder="Last Name">
+                <input name="email" type="email" placeholder="Email" required>
+                <input name="phone_number" type="tel" placeholder="Phone Number">
+                <label name="" for="location">Location:</label>
                 <select name="location" id="location" placeholder="Estado" required>
-                    <option value="">None</option>
-                    <option value="state" id="state">Jalisco</option>
+                    <option value="none">None</option>
                 </select>
-                <input type="text" placeholder="Username" required>
-                <input type="text" placeholder="Password" required>
-                <input type="text" placeholder="Verify Password" required>
-                <input type="submit" name="new-user" id="new-user" value="Register">
+                <input name="street_name_and_number" type="text" placeholder="Street Name, Number" required>
+                <input name="zipcode" type="number" maxlength="5" placeholder="ZIP Code" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" required>
+                <input name="password" type="text" placeholder="Password" required>
+                <input name="password" type="text" placeholder="Verify Password" required>
+                <input name="User" type="submit" name="new-user" id="new-user" value="Register">
             </form>
 <!-- Nurse Form -->
-            <form class="nurse-form" id="nurse-form" action="#" method="post" enctype="multipart/form-data" autocomplete="on">
-                <input type="text" placeholder="First Name" required>
-                <input type="text" placeholder="Last Name">
-                <input type="email" placeholder="Email" required>
-                <input type="tel" placeholder="Phone Number">
-                <label for="location">Location:</label>
-                <select name="location" id="location" placeholder="Estado" required>
+            <form class="nurse-form" id="nurse-form" action="/Employee.js" method="post" enctype="multipart/form-data" autocomplete="on">
+                <input name="first_name" type="text" placeholder="First Name" required>
+                <input name="last_name" type="text" placeholder="Last Name">
+                <input name="email" type="email" placeholder="Email" required>
+                <input name="phone_number" type="tel" placeholder="Phone Number">
+                <label name="" for="location">Location:</label>
+                <select name="location" id="" placeholder="Estado" required>
                     <option value="">None</option>
-                    <option value="cdmx" id="state">CDMX</option>
                 </select>
-                <input type="text" placeholder="Username" required>
-                <input type="text" placeholder="Password" required>
-                <input type="text" placeholder="Verify Password" required>
-                <input type="submit" name="new-user" id="new-user" value="Register">  
+                <input name="password" type="text" placeholder="Password" required>
+                <input name="password" type="text" placeholder="Verify Password" required>
+                <input name="Employee" type="submit" name="new-user" id="new-nurse" value="Register">  
             </form>
         </div>
     </div>
