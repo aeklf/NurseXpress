@@ -25,6 +25,11 @@ Appointments.init(
                 key: 'id'
             },
         },
+        service_id: {
+            type: DataTypes.STRING,
+            references: 'services',
+            key: 'id'
+        },
         date: {
             type: DataTypes.DATEONLY,
             allowNull: false,
