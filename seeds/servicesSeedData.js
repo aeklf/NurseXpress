@@ -31,6 +31,8 @@ const serviceData = [
     }
 ];
 
-const seedServices = () => Service.bulkCreate(serviceData);
+const seedServices = () => Service.bulkCreate(serviceData, {
+        validate: true,
+});
 
 module.exports = seedServices;

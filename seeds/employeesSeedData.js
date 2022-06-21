@@ -27,6 +27,9 @@ const employeeData = [
     }
 ];
 
-const seedEmployee = () => Employee.bulkCreate(employeeData);
+const seedEmployee = () => Employee.bulkCreate(employeeData, {
+        validate: true,
+        individualHooks: true
+});
 
 module.exports = seedEmployee;

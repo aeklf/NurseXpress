@@ -22035,6 +22035,8 @@ const citiesData = [
   }
 ];
 
-const seedCities = () => Cities.bulkCreate(citiesData);
+const seedCities = () => Cities.bulkCreate(citiesData, {
+        validate: true,
+});
 
 module.exports = seedCities;
