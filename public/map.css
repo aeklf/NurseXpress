@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+}
+#map {
+    width: 1000px;
+    height: 600px;
+    margin: auto;
+}
+
+.profile-picture {
+    height: 4rem;
+    display: block;
+    margin: auto;
+    padding: 0.5rem 0;
+    border-radius: 25%;
+}
