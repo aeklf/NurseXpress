@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body {
+    place-items: center;
+    scroll-behavior: smooth;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.2);
+    width: 100vw;
+    position: fixed;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.logo {
+    h1 {
+    cursor: pointer;
+    }
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navLink {
+    margin: 0 10px;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 100px;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+
+    &:active, &:hover {
+        background-color: #0de387;
+        color: white;
+    }
+    
+}
+
+#popup-login {
+    
+    &:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+.section {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:nth-child(odd) {
+            background-color: rgb(235, 235, 235);
+        }
+    }
+
+
+
+@import 'login';

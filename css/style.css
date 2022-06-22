@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  place-items: center;
+  scroll-behavior: smooth;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+  box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  position: fixed;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.logo h1 {
+  cursor: pointer;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navLink {
+  margin: 0 10px;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 100px;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+}
+.navLink:active, .navLink:hover {
+  background-color: #0de387;
+  color: white;
+}
+
+#popup-login:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section:nth-child(odd) {
+  background-color: rgb(235, 235, 235);
+}
+
+.popup-form {
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  width: 30%;
+  display: none;
+}
+
+.log-container {
+  background: white;
+  box-shadow: 0px 25px 35px rgba(0, 0, 0, 0.3);
+  margin: auto 150px;
+  padding: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.log-container .title {
+  width: 100%;
+  font-size: 30px;
+}
+.log-container .container-forms {
+  width: 100%;
+  overflow: hidden;
+}
+.log-container .slider {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  margin: 15px 0px;
+  border: 1px solid rgb(170, 169, 169);
+  border-radius: 6px;
+  position: relative;
+}
+
+.container-forms .inner-form {
+  width: 200%;
+}
+.container-forms .inner-form .nurse-form {
+  display: none;
+}
+.container-forms .inner-form form {
+  width: 50%;
+}
+.container-forms .inner-form form input {
+  height: 50px;
+  margin-top: 20px;
+  width: 100%;
+  padding-left: 25px;
+  outline: none;
+  border-radius: 6px;
+  border: 1px solid rgb(170, 169, 169);
+  border-top-width: 2px;
+  transition: all 0.6s ease-in-out;
+}
+.container-forms .inner-form form input[type=submit] {
+  color: white;
+  font-size: 18px;
+  background: linear-gradient(to right, #97dd9c, #0de387, #4bc0c8);
+  border: none;
+  cursor: pointer;
+}
+.container-forms .inner-form form input:focus {
+  border-color: #4bc0c8;
+}
+.container-forms .inner-form form .forgot-pwd {
+  text-align: left;
+}
+.container-forms .inner-form form .register-link {
+  margin-top: 15px;
+}
+.container-forms .inner-form form .user-type {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.slider .sliding {
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1;
+  color: white;
+}
+.slider .tab-slider {
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  background: linear-gradient(to right, #97dd9c, #0de387, #4bc0c8);
+  height: 100%;
+  width: 50%;
+  border-radius: 6px;
+  transition: all 0.3s ease-out;
+}
+.slider .nurse {
+  color: black;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+#nurse:checked ~ .tab-slider {
+  left: 50%;
+}
+#nurse:checked ~ .nurse {
+  color: white;
+}
+#nurse:checked ~ .user {
+  color: black;
+}
+
+#show-user-password, #show-nurse-password {
+  cursor: pointer;
+}
+
+.show-password {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.show-password i {
+  position: relative;
+}/*# sourceMappingURL=style.css.map */
