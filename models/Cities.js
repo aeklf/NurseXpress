@@ -18,7 +18,6 @@ Cities.init(
         city: {
             type: DataTypes.STRING,
             allowNull: false,
-            unique: false,
         },
         latitude: {
             type: DataTypes.FLOAT,

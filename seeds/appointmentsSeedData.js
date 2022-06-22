@@ -1,4 +1,4 @@
-const Appointments = require('../models/Appointments');
+const { Appointment } = require('../models');
 
 const appointmentsData = [
     // {
@@ -20,7 +20,7 @@ const appointmentsData = [
     }
 ];
 
-const seedAppointments = () => Appointments.bulkCreate(appointmentsData, {
+const seedAppointments = () => Appointment.bulkCreate(appointmentsData, {
     validate: true,
 });
 

@@ -25,18 +25,7 @@ Service.init(
             validate: {
                 isDecimal: true,
             },
-        },
-        active_status: {
-            type: DataTypes.BOOLEAN,
-            allowNull: false
-        },
-        employee_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'employee',
-                key: 'id',
-            },
-        },
+        }
     },
     {
         sequelize,

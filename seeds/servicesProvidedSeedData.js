@@ -1,4 +1,4 @@
-const ServiceProvided = require('../models/ServicesProvided');
+const { ServicesProvided } = require('../models');
 
 const serviceProvidedData = [
     {
@@ -23,7 +23,7 @@ const serviceProvidedData = [
     }
 ];
 
-const seedServicesProvided = () => ServiceProvided.bulkCreate(serviceProvidedData, {
+const seedServicesProvided = () => ServicesProvided.bulkCreate(serviceProvidedData, {
         validate: true,
 });
 

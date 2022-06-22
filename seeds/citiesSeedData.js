@@ -1,4 +1,4 @@
-const Cities = require('../models/Cities');
+const { Cities } = require('../models');
 const citiesData = [
   {
     "city": "Mexico City", 
@@ -22036,7 +22036,7 @@ const citiesData = [
 ];
 
 const seedCities = () => Cities.bulkCreate(citiesData, {
-        validate: true,
+  validate: true,
 });
 
 module.exports = seedCities;
