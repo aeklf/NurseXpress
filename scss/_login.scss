@@ -137,3 +137,17 @@ input[type="radio"]{
         color: black;
     }
 }
+
+// Show password icon
+#show-user-password, #show-nurse-password {
+    cursor: pointer;
+}
+
+.show-password {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    i{
+        position:relative;
+    }  
+}

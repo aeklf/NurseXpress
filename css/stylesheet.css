@@ -346,7 +346,8 @@ h3 {
 }
 
 input,
-textarea {
+textarea,
+select {
   background-color: #eee;
   border: none;
   padding: 12px 15px;
@@ -356,8 +357,10 @@ textarea {
 }
 
 input:focus,
-textarea:focus {
-  outline: 1px solid;
+textarea:focus,
+select:focus,
+i:focus {
+outline: 1px solid;
 }
 
 button {

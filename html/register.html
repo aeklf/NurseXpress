@@ -8,6 +8,7 @@
     <link href="../css/stylesheet.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <title>Log in and register form</title>
 </head>
 
@@ -62,7 +63,7 @@
 
         <div class="inner-form">
 <!-- User Form -->
-            <form class="user-form" id="user-form" action="/Users.js" method="post" enctype="multipart/form-data" autocomplete="on">
+            <form class="user-form" id="user-form" action="#" method="post" enctype="multipart/form-data" autocomplete="on">
                 <input name="first_name" type="text" placeholder="First Name" required>
                 <input name="last_name" type="text" placeholder="Last Name">
                 <input name="email" type="email" placeholder="Email" required>
@@ -73,22 +74,27 @@
                 </select>
                 <input name="street_name_and_number" type="text" placeholder="Street Name, Number" required>
                 <input name="zipcode" type="number" maxlength="5" placeholder="ZIP Code" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" required>
-                <input name="password" type="text" placeholder="Password" required>
-                <input name="password" type="text" placeholder="Verify Password" required>
+                <div class="show-password"><input name="password" id="user-password" type="password" placeholder="Password" onkeyup='verify();' required>
+                <i class="far fa-eye" id="show-user-password"></i></div>
+                <input name="verify_password" id="user-verify" type="password" placeholder="Verify Password" onkeyup='verify();'
+                    required>
+                <span id='user-message'></span>
                 <input name="User" type="submit" name="new-user" id="new-user" value="Register">
             </form>
 <!-- Nurse Form -->
-            <form class="nurse-form" id="nurse-form" action="/Employee.js" method="post" enctype="multipart/form-data" autocomplete="on">
+            <form class="nurse-form" id="nurse-form" action="#" method="post" enctype="multipart/form-data" autocomplete="on">
                 <input name="first_name" type="text" placeholder="First Name" required>
                 <input name="last_name" type="text" placeholder="Last Name">
                 <input name="email" type="email" placeholder="Email" required>
                 <input name="phone_number" type="tel" placeholder="Phone Number">
                 <label name="" for="location">Location:</label>
                 <select name="location" id="" placeholder="Estado" required>
-                    <option value="">None</option>
+                    <option value="none">None</option>
                 </select>
-                <input name="password" type="text" placeholder="Password" required>
-                <input name="password" type="text" placeholder="Verify Password" required>
+                <div class="show-password"><input name="password" id="nurse-password" type="password" placeholder="Password" onkeyup='verify();' required>
+                <i class="far fa-eye" id="show-nurse-password"></i></div>
+                <input name="verify_password" id="nurse-verify" type="password" placeholder="Verify Password" onkeyup='verify();' required>
+                <span id='nurse-message'></span>
                 <input name="Employee" type="submit" name="new-user" id="new-nurse" value="Register">  
             </form>
         </div>
