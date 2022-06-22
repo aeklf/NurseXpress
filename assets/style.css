@@ -1,4 +1,19 @@
 /* AGENDA */
+
+.container {
+  margin-top: 50px;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+#calendar {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 :root {
   --color-accent: #4bc0c8;
   --background-color: #f8f7fa;
@@ -15,27 +30,13 @@
   --spacing: 18px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #19181a;
-    --foreground-color: #282729;
-    --text-color: #c9c8cc;
-    --highlight-text-color: #f8f7fa;
-    --inactive-text-color: #68676a;
-    --btn-bg: #313133;
-    --box-shadow: #111111;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  height: 100vh;
   background: var(--background-color);
-  display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Quicksand", sans-serif;
@@ -43,7 +44,9 @@ body {
 }
 
 .card {
-  width: 316px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
   height: fit-content;
   background-color: var(--foreground-color);
   border-radius: var(--border-radius);
@@ -158,4 +161,17 @@ body {
   font-size: 0.9rem;
   margin-right: 1px;
   box-shadow: 0px 0px 0px var(--box-shadow);
+}
+
+/* MEDIA QUERIES */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #19181a;
+    --foreground-color: #282729;
+    --text-color: #c9c8cc;
+    --highlight-text-color: #f8f7fa;
+    --inactive-text-color: #68676a;
+    --btn-bg: #313133;
+    --box-shadow: #111111;
+  }
 }

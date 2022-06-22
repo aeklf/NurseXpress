@@ -23,7 +23,7 @@ body {
   padding: 10px 50px;
   box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.2);
   width: 100vw;
-  position: fixed;
+  position: sticky;
   background-color: white;
   transition: all 0.5s ease-in-out;
 }
