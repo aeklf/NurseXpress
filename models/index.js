@@ -6,43 +6,43 @@ const Appointment = require('./Appointments');
 const ServicesProvided = require('./ServicesProvided');
 
 //Appointments - Employee One-to-One 
-Appointment.hasOne(Employee, {
+Appointment.belongsTo(Employee, {
     foreignKey: 'employee_id',
 });
-Employee.belongsTo(Appointment, {
+Employee.hasMany(Appointment, {
     foreignKey: 'employee_id',
 });
 //Appointments - User One-to-One 
-Appointment.hasOne(User, {
+Appointment.belongsTo(User, {
     foreignKey: 'user_id',
 });
-User.belongsTo(Appointment, {
+User.hasMany(Appointment, {
     foreignKey: 'user_id',
 });
 //Appointments - Service One-to-One 
-Appointment.hasOne(Services, {
+Appointment.belongsTo(Services, {
     foreignKey: 'service_id',
 });
-Services.belongsTo(Appointment, {
+Services.hasMany(Appointment, {
     foreignKey: 'service_id',
 });
 //Appointments - Location One-to-One 
-Appointment.hasOne(Cities, {
+Appointment.belongsTo(Cities, {
     foreignKey: 'location_id',
 });
-Cities.belongsTo(Appointment, {
+Cities.hasMany(Appointment, {
     foreignKey: 'location_id',
 });
 
-//Employee - Cities One-to-One
-Employee.hasOne(Cities, {
-    foreignKey: 'city_id',
+// Employee - Cities One-to-One
+Employee.belongsTo(Cities, {
+    foreignKey: 'city_id'
 });
-Cities.belongsTo(Employee, {
-    foreignKey: 'city_id',
+Cities.hasOne(Employee, {
+    foreignKey: 'city_id'
 });
 
-//Employee <-> Services Many-to-Many
+// Employee <-> Services Many-to-Many
 Employee.belongsToMany(Services, {
     through: ServicesProvided
 });

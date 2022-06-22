@@ -1,6 +1,13 @@
 const router = require("express").Router();
-const Employee = require("../../models/Employee");
+const { Employee } = require("../../models");
+const { Cities } = require("../../models");
 
+router.get('/', async (req, res) => {
+    const result = await Employee.findAll({
+        include: Cities
+    });
+    res.status(200).json(result);
+})
 
 router.get('/:id', async (req, res) => {
     try {

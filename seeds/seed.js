@@ -9,7 +9,8 @@ const seedAppointments = require('./appointmentsSeedData');
 const seedServicesProvided = require('./servicesProvidedSeedData');
 
 const seedAll = async ()=>{
-    // await sequelize.sync({force:false});
+    await sequelize.query("SET FOREIGN_KEY_CHECKS = 0");
+    await sequelize.sync({force:true});
 
     await seedUser();
     console.log('\n----- User SEEDED -----\n');
