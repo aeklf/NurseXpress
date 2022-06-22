@@ -21,8 +21,8 @@ const init = async () => {
   try {
     await sequelize.query("SET FOREIGN_KEY_CHECKS = 0");
     await sequelize.sync({force:true});
+    await sequelize.query("SET FOREIGN_KEY_CHECKS = 1");
     console.log('Successful connection to the database');
-    // await sequelize.query("SET FOREIGN_KEY_CHECKS = 1");
     app.listen(PORT, () => console.log('Express web server now listening'));
   } catch (err) {
     console.log(err);
