@@ -178,4 +178,17 @@ input[type=radio] {
 }
 #nurse:checked ~ .user {
   color: black;
+}
+
+#show-user-password, #show-nurse-password {
+  cursor: pointer;
+}
+
+.show-password {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.show-password i {
+  position: relative;
 }/*# sourceMappingURL=style.css.map */
