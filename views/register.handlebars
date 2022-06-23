@@ -1,0 +1,60 @@
+<!-- Form registers -->
+<section>
+<div class="log-container">
+
+        <div class="title">Register as:</div>
+
+
+    <div class="container-forms">
+            <div class="slider">
+                <input type="radio" name="slider-option" id="user" checked>
+                <input type="radio" name="slider-option" id="nurse">
+                <label for="user" class="sliding user">User</label>
+                <label for="nurse" class="sliding nurse">Nurse</label>
+                <div class="tab-slider"></div>
+            </div>
+
+        <div class="inner-form">
+<!-- User Form -->
+            <form class="user-form" id="user-form" action="#" method="post" enctype="multipart/form-data" autocomplete="on">
+                <input name="first_name" type="text" placeholder="First Name" required>
+                <input name="last_name" type="text" placeholder="Last Name">
+                <input name="email" type="email" placeholder="Email" required>
+                <input name="phone_number" type="tel" placeholder="Phone Number">
+                <label name="" for="location">Location:</label>
+                <select name="location" id="location" placeholder="Estado" required>
+                    <option value="none">None</option>
+                </select>
+                <input name="street_name_and_number" type="text" placeholder="Street Name, Number" required>
+                <input name="zipcode" type="number" maxlength="5" placeholder="ZIP Code" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" required>
+                <div class="show-password"><input name="password" id="user-password" type="password" placeholder="Password" onkeyup='verify();' required>
+                <i class="far fa-eye" id="show-user-password"></i></div>
+                <input name="verify_password" id="user-verify" type="password" placeholder="Verify Password" onkeyup='verify();'
+                    required>
+                <span id='user-message'></span>
+                <input name="User" type="submit" name="new-user" id="new-user" value="Register">
+            </form>
+<!-- Nurse Form -->
+            <form class="nurse-form" id="nurse-form" action="#" method="post" enctype="multipart/form-data" autocomplete="on">
+                <input name="first_name" type="text" placeholder="First Name" required>
+                <input name="last_name" type="text" placeholder="Last Name">
+                <input name="email" type="email" placeholder="Email" required>
+                <input name="phone_number" type="tel" placeholder="Phone Number">
+                <label name="" for="location">Location:</label>
+                <select name="location" id="" placeholder="Estado" required>
+                    <option value="none">None</option>
+                </select>
+                <div class="show-password"><input name="password" id="nurse-password" type="password" placeholder="Password" onkeyup='verify();' required>
+                <i class="far fa-eye" id="show-nurse-password"></i></div>
+                <input name="verify_password" id="nurse-verify" type="password" placeholder="Verify Password" onkeyup='verify();' required>
+                <span id='nurse-message'></span>
+                <input name="Employee" type="submit" name="new-user" id="new-nurse" value="Register">  
+            </form>
+        </div>
+    </div>
+
+</div>
+</section>
+
+
+<script src="../js/index.js"></script>

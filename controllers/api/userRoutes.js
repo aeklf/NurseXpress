@@ -14,6 +14,24 @@ router.post('/' , async (req, res) => {
 })
 
 
+//Get register form
+router.get('/register', async (req,res)=>{
+  try{
+    res.render('register');
+  }catch(err){
+    res.status(400).json(err)
+  }
+});
+
+//Get login form
+router.get('/login', async ()=>{
+  try{
+    res.render('login');
+  }catch(err){
+    res.status(400).json(err)
+  }
+})
+
 
 // GET to bring one user
 // router.get('/:id', async (req, res) => {
