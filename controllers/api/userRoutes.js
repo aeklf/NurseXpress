@@ -3,17 +3,6 @@ const User = require('../../models/User');
 
 
 
-//POST to create a new user
-router.post('/' , async (req, res) => {
-  try {
-   const newUser =  await User.create(req.body);
-    res.status(200).json(newUser);
-  } catch (err) {
-    res.status(500).json(err);
-  }
-})
-
-
 //Get register form
 router.get('/register', async (req,res)=>{
   try{
@@ -29,6 +18,20 @@ router.get('/login', async ()=>{
     res.render('login');
   }catch(err){
     res.status(400).json(err)
+  }
+})
+
+
+//POST to create a new user
+router.post('/register' , async (req, res) => {
+  try {
+
+    const newUser = req.body;
+    console.log(req.body);
+    await User.create(newUser);
+    res.status(200).json(newUser);
+  } catch (err) {
+    res.status(500).send({message:'User not created'});
   }
 })
 
