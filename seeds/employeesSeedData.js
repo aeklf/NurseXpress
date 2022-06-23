@@ -7,7 +7,8 @@ const employeeData = [
         "first_name": "Lalito",
         "last_name": "Perez",
         "city_id": 1,
-        "available_schedule": "02/02/2022"
+        "available_schedule": "02/02/2022",
+        "phone_number": 5555555555
     },
     {
         "email": "prueba2@gmail.com",
@@ -15,7 +16,8 @@ const employeeData = [
         "first_name": "Chanchito",
         "last_name": "Feliz",
         "city_id": 2,
-        "available_schedule": "02/02/2022"
+        "available_schedule": "02/02/2022",
+        "phone_number": 5555555555
     },
     {
         "email": "prueba3@gmail.com",
@@ -23,7 +25,8 @@ const employeeData = [
         "first_name": "Jorge",
         "last_name": "Paredes",
         "city_id": 3,
-        "available_schedule": "02/02/2022"
+        "available_schedule": "02/02/2022",
+        "phone_number": 5555555555
     }
 ];
 
