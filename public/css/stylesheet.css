@@ -28,8 +28,10 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-.logo h1 {
+.logo h1 a {
   cursor: pointer;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 h2 {

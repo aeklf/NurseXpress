@@ -7,14 +7,13 @@
     <title>Sign Up</title>
     <link href="../public/css/stylesheet.css" rel="stylesheet">
     <link href="../public/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <title>Log in and register form</title>
 </head>
 
 <body>
-    
-    
+
 <navbar class="navbar">
     <div class="logo">
         <h1>NurseXpress</h1>
@@ -74,8 +73,10 @@
                 </select>
                 <input name="street_name_and_number" type="text" placeholder="Street Name, Number" required>
                 <input name="zipcode" type="number" maxlength="5" placeholder="ZIP Code" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" required>
-                <div class="show-password"><input name="password" id="user-password" type="password" placeholder="Password" onkeyup='verify();' required>
-                <i class="far fa-eye" id="show-user-password"></i></div>
+                <div class="show-password">
+                    <input name="password" id="user-password" type="password" placeholder="Password" onkeyup='verify();' required>
+                    <i class="far fa-eye" id="show-user-password"></i>
+                </div>
                 <input name="verify_password" id="user-verify" type="password" placeholder="Verify Password" onkeyup='verify();'
                     required>
                 <span id='user-message'></span>
