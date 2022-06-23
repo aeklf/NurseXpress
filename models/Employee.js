@@ -49,6 +49,10 @@ Employee.init(
                 key: 'id'
             }
         },
+        phone_number: {
+            type: DataTypes.BIGINT,
+            allowNull: false
+        },
         available_schedule: {
             type: DataTypes.DATE,
             allowNull: false,
