@@ -58,6 +58,10 @@ User.init(
             type: DataTypes.INTEGER,
             allowNull: false,
         },
+        phone_number:{
+            type:DataTypes.BIGINT,
+            allowNull: false,
+        }
     },
     {
         hooks: {
