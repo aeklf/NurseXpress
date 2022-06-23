@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Sign Up</title>
-    <link href="../css/stylesheet.css" rel="stylesheet">
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="../public/css/stylesheet.css" rel="stylesheet">
+    <link href="../public/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <title>Log in and register form</title>
@@ -63,7 +63,7 @@
 
         <div class="inner-form">
 <!-- User Form -->
-            <form class="user-form" id="user-form" action="#" method="post" enctype="multipart/form-data" autocomplete="on">
+            <form class="user-form" id="user-form" action="#" method="post" enctype="text/plain" autocomplete="on">
                 <input name="first_name" type="text" placeholder="First Name" required>
                 <input name="last_name" type="text" placeholder="Last Name">
                 <input name="email" type="email" placeholder="Email" required>
@@ -82,7 +82,7 @@
                 <input name="User" type="submit" name="new-user" id="new-user" value="Register">
             </form>
 <!-- Nurse Form -->
-            <form class="nurse-form" id="nurse-form" action="#" method="post" enctype="multipart/form-data" autocomplete="on">
+            <form class="nurse-form" id="nurse-form" action="#" method="post" autocomplete="on">
                 <input name="first_name" type="text" placeholder="First Name" required>
                 <input name="last_name" type="text" placeholder="Last Name">
                 <input name="email" type="email" placeholder="Email" required>
@@ -97,14 +97,16 @@
                 <span id='nurse-message'></span>
                 <input name="Employee" type="submit" name="new-user" id="new-nurse" value="Register">  
             </form>
+            
         </div>
+        <div class="register-link">Already a Member? <a href="../html/login.html"> Login now</a> </div>
     </div>
 
 </div>
 </section>
 
 
-<script src="../js/index.js"></script>
+<script src="../public/js/index.js"></script>
 
 </body>
 </html>
