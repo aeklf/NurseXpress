@@ -63,7 +63,7 @@
                             color: white;
                             font-size: 18px;
                             background: linear-gradient(to right,
-                                    #97dd9c,
+                                    $green-pastel,
                                     #0de387,
                                     #4bc0c8);
                             border: none;
@@ -107,7 +107,7 @@
         left: 0;
         z-index: 0;
         background:linear-gradient(to right,
-                #97dd9c,
+                $green-pastel,
                 #0de387,
                 #4bc0c8);
                 height: 100%;

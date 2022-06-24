@@ -1,0 +1,49 @@
+// Navbar
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.2);
+    width: 100vw;
+    position: fixed;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.logo {
+    h1 {
+        cursor: pointer;
+    }
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navLink {
+    margin: 0 10px;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 100px;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+
+    &:active,
+    &:hover {
+        background-color: #0de387;
+        color: white;
+    }
+
+}
+
+// Popup-Login
+#popup-login {
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
