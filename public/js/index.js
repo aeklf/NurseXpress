@@ -86,4 +86,71 @@ showNursePwd.addEventListener('click', function (_f) {
 });
 
 
+//Cities dropdown list USER
+let cityDropdown = document.getElementById('city_name');
+cityDropdown.length = 0;
+
+let defaultOption = document.createElement('option');
+defaultOption.text = 'Choose city';
+
+cityDropdown.add(defaultOption);
+cityDropdown.selectedIndex = 0;
+
+const url = '/api/cities';
+
+const cities = new XMLHttpRequest();
+cities.open('GET', url, true);
+
+cities.onload = function() {
+  if (cities.status === 200) {
+    const data = JSON.parse(cities.responseText);
+    let option = data[0];
+    for (let i = 0; i < data.length; i++) {
+      option = document.createElement('option');
+      option.name = data[i].id;
+      option.text = data[i].city;
+      option.value = data[i].id;
+      cityDropdown.add(option);
+    }
+   } 
+}
+cities.onerror = function() {
+  console.error(`An error occurred fetching the JSON. URL: ${url}`);
+};
+
+cities.send();
+
+//Cities dropdown list Nurse
+let cityDropdownNurse = document.getElementById('city_name_nurse');
+cityDropdownNurse.length = 0;
+
+let defaultOptionNurse = document.createElement('option');
+defaultOptionNurse.text = 'Choose city';
+
+cityDropdownNurse.add(defaultOptionNurse);
+cityDropdownNurse.selectedIndex = 0;
+
+// const urlNurse = '/api/cities';
+
+const citiesNurse = new XMLHttpRequest();
+citiesNurse.open('GET', url, true);
+
+citiesNurse.onload = function() {
+  if (citiesNurse.status === 200) {
+    const data = JSON.parse(citiesNurse.responseText);
+    let option = data[0];
+    for (let i = 0; i < data.length; i++) {
+      option = document.createElement('option');
+      option.name = data[i].id;
+      option.text = data[i].city;
+      option.value = data[i].id;
+      cityDropdownNurse.add(option);
+    }
+   } 
+}
+citiesNurse.onerror = function() {
+  console.error(`An error occurred fetching the JSON. URL: ${url}`);
+};
+
+citiesNurse.send();
 

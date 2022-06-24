@@ -8,7 +8,8 @@ const userData = [
         "last_name": "Doe",
         "street_name_and_number": "Av. Mexico 89",
         "zipcode": 56290,
-        "phone_number": 5571097379
+        "phone_number": 5571097379,
+        // "city_id": 53,
     },
     {
         "email": "test2wqd24@test.com",
@@ -17,7 +18,8 @@ const userData = [
         "last_name": "Doe",
         "street_name_and_number": "Av. Mexico 89",
         "zipcode": 56290,
-        "phone_number": 5571097379
+        "phone_number": 5571097379,
+        // "city_id": 42,
     }
 ];
 
