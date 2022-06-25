@@ -1,0 +1,145 @@
+.section-lead {
+    max-width: 600px;
+    margin: 1rem auto 1.5rem;
+}
+
+.services-grid {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.service {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    -webkit-box-flex: 1;
+    flex: 1;
+    border: 2px solid #e7e7e7;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    color: aliceblue;
+    font-size: 12px;
+    margin-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    h4 {
+        font-weight: 600;
+        color: #56ceba;
+        font-size: 1.3rem;
+        margin: 1rem 0 0.6rem;
+    }
+
+    a {
+        color: #0de387;
+        display: block;
+    }
+
+    i {
+        font-size: 3.45rem;
+        margin: 1rem 0;
+    }
+
+    &:hover {
+        -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+        -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .cta {
+        align-self: flex-end;
+        span {
+            font-size: 0.6rem;
+        }
+    }
+    
+    >* {
+        flex: 1 1 100%;
+    }
+}
+
+.service1 { 
+    i, 
+    h4, 
+    .cta {
+        color: $alice;
+    }
+    &:hover {
+        border: 2px solid $green-neon;
+    }
+}
+
+.service2 {
+
+    i,
+    h4,
+    .cta {
+        color: $alice;
+    }
+
+    &:hover {
+        border: 2px solid $green-neon;
+    }
+}
+
+.service3 {
+
+    i,
+    h4,
+    .cta {
+        color: $alice;
+    }
+
+    &:hover {
+        border: 2px solid $green-neon;
+    }
+}
+
+#services {
+    text-align: center;
+    columns: 3;
+    margin: 10px;
+    display: inline-flex;
+    display: inline-block;
+    justify-content: space-evenly;
+    width: 30%;
+    padding: 30px 10px;
+}
+
+#wrapper {
+    overflow: auto;
+    width: 80%;
+}
+
+#serviceText {
+    color: aliceblue;
+    margin-bottom: 30px;
+}
+
+
+.serviceTxt {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    font-size: 20px;
+    display: flex;
+}
+
+.serviceImg {
+    border-radius: 50%;
+    max-height: 200px;
+    max-width: 200px;
+    margin-left: auto;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}

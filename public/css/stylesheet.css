@@ -50,6 +50,8 @@ div.city-droplist, div.available-schedule {
 
 .logo h1 {
   cursor: pointer;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 h2 {
