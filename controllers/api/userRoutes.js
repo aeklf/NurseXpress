@@ -58,17 +58,15 @@ router.post('/login', async (req, res) => {
     //Validate email in the DataBase
     const userData = await User.findOne({ where: { email: req.body.email } });
     if (!userData) {
-      res
-        .status(400)
-        .json({ message: 'Incorrect email, please try again' });
+      
+      res.render('home',{error: 'Invalid Email or Password'});
+        // .status(400)
       return;
     }                     
     //Validate the user's password
     const validPassword = await userData.checkPassword(req.body.password);
     if (!validPassword) {
-      res
-        .status(400)
-        .json({ message: 'Incorrect password, please try again' });
+      res.render('home',{error: 'Invalid Email or Password'});
       return;
     }
     req.session.save(()=>{
