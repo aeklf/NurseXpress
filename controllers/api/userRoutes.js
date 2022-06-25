@@ -54,27 +54,45 @@ router.post('/register' , async (req, res) => {
 
 // POST method for user's login in route /api/users/login
 router.post('/login', async (req, res) => {
-    try {
-      const userData = await User.findOne({ where: { email: req.body.email } });
-      if (!userData) {
-        res
-          .status(400)
-          .json({ message: 'Incorrect email or password, please try again' });
-        return;
-      }
-                             
-        //Here I give to checkPassword Method the users input in order to validate the password
-      const validPassword = await userData.checkPassword(req.body.password);
-      if (!validPassword) {
-        res
-          .status(400)
-          .json({ message: 'Incorrect email or password, please try again' });
-        return;
-      }
-      res.json({ user: userData, message: 'You are now logged in!' });
-    } catch (err) {
-      res.status(400).json(err);
+  try {
+    //Validate email in the DataBase
+    const userData = await User.findOne({ where: { email: req.body.email } });
+    if (!userData) {
+      res
+        .status(400)
+        .json({ message: 'Incorrect email, please try again' });
+      return;
+    }                     
+    //Validate the user's password
+    const validPassword = await userData.checkPassword(req.body.password);
+    if (!validPassword) {
+      res
+        .status(400)
+        .json({ message: 'Incorrect password, please try again' });
+      return;
     }
+    req.session.save(()=>{
+      req.session.loggedIn = true;
+      req.session.userId = userData.id;
+      res.status(200).render('user');
+    });
+    
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
+
+
+// User Logout
+router.get('/logout', (req, res) => {
+// When the user logs out, the session is destroyed
+if (req.session.loggedIn) {
+    req.session.destroy(() => {
+    res.redirect('/');
   });
+} else {
+  res.status(404).end();
+}
+});
 
 module.exports = router;

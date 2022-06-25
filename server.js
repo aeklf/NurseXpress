@@ -1,19 +1,27 @@
+//Import libraries
 const express = require('express');
 const path = require('path');
 const exphbs = require('express-handlebars');
+const session = require('express-session');
 
-//Import sequalize conecction
+//Import connection to DataBase
 const sequelize = require('./config/connection');
 
-//Import all routes
+//Import controllers
 const routes = require('./controllers/index');
 
 const hbs = exphbs.create({});
-
-
-
 const app = express();
 const PORT = process.env.PORT || 3001;
+
+//Set up sessions
+const sess = {
+  secret: 'Super secret secret',
+  resave: false,
+  saveUnitialized: false,
+};
+//Middleware allows us to have access to req.session
+app.use(session(sess));
 
 
 app.engine('handlebars', hbs.engine);

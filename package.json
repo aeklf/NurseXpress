@@ -25,6 +25,7 @@
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "express-handlebars": "^5.2.0",
+    "express-session": "^1.17.3",
     "handlebars": "^4.7.7",
     "mysql2": "^2.3.3",
     "sequelize": "^6.20.1"
