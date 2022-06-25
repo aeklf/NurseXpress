@@ -8,8 +8,7 @@ const loginPop = document.getElementById("popup-form");
 
 //Event listeners login, forms
 popBtn.addEventListener('click', openForm);
-nurseBtn.addEventListener('click', showNurse);
-userBtn.addEventListener('click', showUser);
+
 
 // Show log-in pop-up
 function openForm () {
