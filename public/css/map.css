@@ -1,6 +1,35 @@
-h1 {
+#leafletMap h1 {
     text-align: center;
 }
+
+#leafletMap a {
+    margin: 0;
+}
+
+#leafletMap section {
+    max-width: auto;
+    margin: 0;
+    text-align: left;
+    padding: 0;
+}
+
+#leafletMap input[type="radio"] {
+    display: inline;
+}
+
+#leafletMap input, #leafletMap textarea, #leafletMap select {
+    background-color: #eee;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    font-size: 1em;
+}
+
+#leafletMap label {
+    margin-bottom: 0;
+}
+
 #map {
     width: 750px;
     height: 450px;
@@ -8,7 +37,7 @@ h1 {
     border-radius: 0.5rem;
 }
 
-.profile-picture {
+#leafletMap .profile-picture {
     height: 4rem;
     display: block;
     margin: auto;
@@ -16,11 +45,11 @@ h1 {
     border-radius: 25%;
 }
 
-.leaflet-popup-content-wrapper{
+#leafletMap .leaflet-popup-content-wrapper{
     text-align: center;
 }
 
-.leaflet-popup-content-wrapper input{
+#leafletMap .leaflet-popup-content-wrapper input{
     cursor: pointer;
     background-color: cornflowerblue;
     border: 0.5px solid black;
@@ -31,7 +60,7 @@ h1 {
     margin-top: 0.5rem;
 }
 
-.leaflet-popup-content-wrapper input:hover{
+#leafletMap .leaflet-popup-content-wrapper input:hover{
     background-color: crimson;
     transform: scale(1.025);
     
