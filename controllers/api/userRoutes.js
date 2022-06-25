@@ -29,8 +29,8 @@ router.post('/register' , async (req, res) => {
     const newUser = req.body;
     console.log(req.body);
     await User.create(newUser);
-    // res.status(200).json(newUser);
-    res.status(200).send({message: 'User created succesfully!'});
+    //Redirect user to homepage, then the user will be able to login
+    res.redirect('/');
   } catch (err) {
     res.status(500).send({message:'User not created'});
   }
