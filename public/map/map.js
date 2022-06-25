@@ -10,8 +10,8 @@ const init = async () => {
             coordinates: [parseFloat(`${employee.city.latitude}`), parseFloat(`${employee.city.longitude}`)]
         }
     })
-    console.log(data);
-    console.log(employeeData);
+    // console.log(data);
+    // console.log(employeeData);
     createMap(employeeData);
 }
 

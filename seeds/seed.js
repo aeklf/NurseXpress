@@ -11,12 +11,12 @@ const seedServicesProvided = require('./servicesProvidedSeedData');
 const seedAll = async ()=>{
     await sequelize.query("SET FOREIGN_KEY_CHECKS = 0");
     await sequelize.sync({force:true});
-
-    await seedUser();
-    console.log('\n----- User SEEDED -----\n');
     
     await seedCities();
     console.log('\n----- Cities SEEDED -----\n');
+    
+    await seedUser();
+    console.log('\n----- User SEEDED -----\n');
     
     await seedEmployee();
     console.log('\n----- Employees SEEDED -----\n');
