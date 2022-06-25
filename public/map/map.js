@@ -68,9 +68,9 @@ const createMap = async (data) => {
             <img class="profile-picture" src="https://tailwindcss.com/img/erin-lindford.jpg" alt="Woman's Face"></img>
             <b>${employee.fullName}</b><br>
             Available<br>
-            Contact!
+            <input type="button" value="Schedule Appointment"/>
         `, {autoClose: false})
-        .openPopup()
+        .closePopup()
     });  
 };
 
