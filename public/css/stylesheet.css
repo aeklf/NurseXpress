@@ -1,6 +1,7 @@
 /* MAIN STYLING */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
 
 
 * {
@@ -23,7 +24,7 @@ body {
   padding: 10px 50px;
   box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.2);
   width: 100vw;
-  position: fixed;
+  position: sticky;
   background-color: white;
   transition: all 0.5s ease-in-out;
 }

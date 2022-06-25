@@ -1,0 +1,177 @@
+/* AGENDA */
+
+.container {
+  margin-top: 50px;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+#calendar {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+:root {
+  --color-accent: #4bc0c8;
+  --background-color: #f8f7fa;
+  --foreground-color: #ffffff;
+  --text-color: #19181a;
+  --highlight-text-color: var(--text-color);
+  --active-text-color: #f8f7fa;
+  --inactive-text-color: #a5a5a5;
+  --btn-bg: #f8f7fa;
+  --box-shadow: #efefef;
+
+  --border-width: 1px;
+  --border-radius: 15px;
+  --spacing: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--background-color);
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  user-select: none;
+}
+
+.card {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  height: fit-content;
+  background-color: var(--foreground-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0px 0px 10px var(--box-shadow);
+}
+
+.calendar-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 15px;
+  border-bottom: var(--border-width) solid var(--box-shadow);
+}
+
+.calendar-toolbar > .current-month {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--highlight-text-color);
+}
+
+.calendar-toolbar > [class$="month-btn"] {
+  width: 40px;
+  aspect-ratio: 1;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  color: var(--highlight-text-color);
+  background: var(--btn-bg);
+  border: none;
+  border-radius: var(--border-radius);
+}
+
+.weekdays,
+.calendar-days {
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline: var(--spacing);
+}
+.weekdays {
+  padding-top: 12px;
+}
+.calendar-days {
+  padding-bottom: 12px;
+}
+
+.weekday-name,
+[class$="-day"] {
+  width: 40px;
+  height: 40px;
+  color: var(--text-color);
+  text-align: center;
+  line-height: 40px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.weekday-name {
+  color: var(--highlight-text-color);
+  font-weight: 700;
+}
+
+.current-day {
+  background-color: var(--color-accent);
+  color: var(--active-text-color);
+  border-radius: var(--border-radius);
+  font-weight: 700;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.padding-day {
+  color: var(--inactive-text-color);
+  user-select: none;
+}
+
+.calendar-toolbar > [class$="month-btn"]:hover,
+.month-day:hover,
+.btn:hover {
+  border-radius: var(--border-radius);
+  background-color: var(--btn-bg);
+  color: var(--color-accent);
+  border-radius: var(--border-radius);
+  transition: 0.1s;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 0px 1.5px var(--color-accent);
+}
+
+.calendar-toolbar > [class$="month-btn"]:focus,
+.month-day:focus,
+.btn:focus {
+  border-radius: var(--border-radius);
+  background-color: var(--color-accent);
+  color: var(--active-text-color);
+}
+
+.goto-buttons {
+  border-top: var(--border-width) solid var(--box-shadow);
+  padding-block: 18px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn {
+  background: var(--btn-bg);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 11px 13px;
+  color: var(--highlight-text-color);
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-right: 1px;
+  box-shadow: 0px 0px 0px var(--box-shadow);
+}
+
+/* MEDIA QUERIES */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #19181a;
+    --foreground-color: #282729;
+    --text-color: #c9c8cc;
+    --highlight-text-color: #f8f7fa;
+    --inactive-text-color: #68676a;
+    --btn-bg: #313133;
+    --box-shadow: #111111;
+  }
+}
