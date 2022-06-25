@@ -49,14 +49,14 @@ User.init(
                 is: /^[a-z]+$/i
             }
         },
-        // city_id: {
-        //     type: DataTypes.INTEGER,
-        //     allowNull: false,
-        //     references: {
-        //         model: 'cities',
-        //         key: 'id'
-        //     }
-        // },
+        city_id: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            references: {
+                model: 'cities',
+                key: 'id'
+            }
+        },
         street_name_and_number: {
             type: DataTypes.STRING,
             allowNull: false,
