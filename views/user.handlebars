@@ -1,0 +1,51 @@
+<navbar class="navbar">
+    <div class="logo">
+        <h1>NurseXpress</h1>
+    </div>
+
+    <div class="navlinks">
+        <a class="navLink" id="appointment">Appointments</a>
+        <a href="/api/users/logout" class="navLink" id="logout">Logout</a>
+        <a href="/about" class="navLink">About</a>
+        <a href="/contact" class="navLink">Contact</a>
+    </div>
+</navbar>
+
+<!--Map with Nurses location-->
+<section id="leafletMap">
+    <h1>NurseXpress - Locate Your Service!</h1>
+    <div id="map"></div>
+</section>
+
+<div id="home" class="section">
+    <div id="wrapper">
+        <h1 id="serviceText">What service are you looking for?</h1>
+        <section>
+            <div class="services-grid">
+                <div class="service service1">
+                    <i>
+                        <img src="/assets/images/lp01.jpg" class="serviceImg">
+                    </i>
+                    <h4>Full Rehydration</h4>
+                    <a href="/agenda" class="cta">Schedule<span class="ti-angle-right"></a>
+                </div>
+
+                <div class="service service2">
+                    <i>
+                        <img src="/assets/images/lp02.jpg" class="serviceImg">
+                    </i>
+                    <h4>Injection Assistance</h4>
+                    <a href="/agenda" class="cta">Schedule<span class="ti-angle-right"></a>
+                </div>
+
+                <div class="service service3">
+                    <i>
+                        <img src="/assets/images/lp03.jpg" class="serviceImg">
+                    </i>
+                    <h4>Special Attention</h4>
+                    <a href="/agenda" class="cta">Schedule<span class="ti-angle-right"></span></a>
+                </div>
+            </div>
+        </section>
+
+        {{!-- <script src="#"></script> --}}

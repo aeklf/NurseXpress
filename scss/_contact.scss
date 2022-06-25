@@ -1,0 +1,28 @@
+#contact {
+    margin-top: 20px;
+}
+
+.formContainer {
+    display: flex;
+}
+
+.rightContainer {
+    display: flex;
+    flex: 1;
+    height: 460px;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightInnerContainer {
+    width: 70%;
+    height: 80%;
+    text-align: center;
+}
+
+.leftInnerContainer {
+    height: 50%;
+    width: 80%;
+    text-align: center;
+    line-height: 22px;
+}

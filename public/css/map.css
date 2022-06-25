@@ -1,0 +1,67 @@
+#leafletMap h1 {
+    text-align: center;
+}
+
+#leafletMap a {
+    margin: 0;
+}
+
+#leafletMap section {
+    max-width: auto;
+    margin: 0;
+    text-align: left;
+    padding: 0;
+}
+
+#leafletMap input[type="radio"] {
+    display: inline;
+}
+
+#leafletMap input, #leafletMap textarea, #leafletMap select {
+    background-color: #eee;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    font-size: 1em;
+}
+
+#leafletMap label {
+    margin-bottom: 0;
+}
+
+#map {
+    width: 750px;
+    height: 450px;
+    margin: auto;
+    border-radius: 0.5rem;
+}
+
+#leafletMap .profile-picture {
+    height: 4rem;
+    display: block;
+    margin: auto;
+    padding: 0.5rem 0;
+    border-radius: 25%;
+}
+
+#leafletMap .leaflet-popup-content-wrapper{
+    text-align: center;
+}
+
+#leafletMap .leaflet-popup-content-wrapper input{
+    cursor: pointer;
+    background-color: cornflowerblue;
+    border: 0.5px solid black;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    transition: all 100ms ease-in;
+    margin-top: 0.5rem;
+}
+
+#leafletMap .leaflet-popup-content-wrapper input:hover{
+    background-color: crimson;
+    transform: scale(1.025);
+    
+}

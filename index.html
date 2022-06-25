@@ -3,26 +3,43 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0!"/>
-    <title></title>
-    <link href="./assets/stylesheet.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>NurseXpress</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link href="./public/css/stylesheet.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
 </head>
 
+<body>
 <navbar class="navbar">
     <div class="logo">
-        <h1>NurseXpress</h1>
+        <h1><a class="logo" href="/">NurseXpress</a></h1>
     </div>
 
     <div class="navlinks">
         <a href="#home" class="navLink">Home</a>
-        <a href="./html/login.html" class="navLink">Log In/Register</a>
+        <a class="navLink" id="popup-login">Log In/Register</a>
+        <div class="log-container popup-form" id="popup-form">
+            <div class="titles">
+                <div class="title login">Login</div>
+            </div>
+            <div class="container-forms">
+                <div class="inner-form">
+                    <form action="#" class="login" id="login" method="post" enctype="multipart/form-data" autocomplete="on">
+                        <input type="text" class="field" placeholder="Email" required>
+                        <input type="password" class="field" placeholder="Password" required>
+                        <div class="forgot-pwd"><a href="#">Forgot password?</a></div>
+                        <input type="submit" class="field" value="Login">
+                        <div class="register-link">Not a member? <a href="../html/register.html"> Register now</a> </div>
+                    </form>
+                </div>
+            </div>
+        </div>
         <a href="./html/about.html" class="navLink">About</a>
         <a href="./html/contact.html" class="navLink">Contact</a>
     </div>
 </navbar>
 
-<body>
 <div id="home" class="section">
     <div id="wrapper">
     <h1 id="serviceText">What service are you looking for?</h1>
@@ -30,7 +47,7 @@
     <div class="services-grid">
         <div class="service service1">
           <i>
-              <img src="./assets/images/lp01.jpg" class="serviceImg">
+              <img src="./public/assets/images/lp01.jpg" class="serviceImg">
           </i>
           <h4>Full Rehydration</h4>
           <a href="#" class="cta">Schedule<span class="ti-angle-right"></a>
@@ -38,7 +55,7 @@
     
         <div class="service service2">
           <i>
-              <img src="./assets/images/lp02.jpg" class="serviceImg">
+              <img src="./public/assets/images/lp02.jpg" class="serviceImg">
           </i>
           <h4>Injection Assistance</h4>
           <a href="#" class="cta">Schedule<span class="ti-angle-right"></a>
@@ -46,7 +63,7 @@
     
         <div class="service service3">
           <i>
-              <img src="./assets/images/lp03.jpg" class="serviceImg">
+              <img src="./public/assets/images/lp03.jpg" class="serviceImg">
           </i>
           <h4>Special Attention</h4>
           <a href="#" class="cta">Schedule<span class="ti-angle-right"></span></a>
@@ -54,5 +71,7 @@
       </div>
     </section>
 
+    <script src="./public/js/server.js"></script>
+    
 </body>
 </html>

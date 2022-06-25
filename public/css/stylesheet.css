@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
 
+
 * {
   padding: 0;
   margin: 0;
@@ -28,8 +29,30 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
+select.city-name {
+  height: 50px;
+  /* margin-top: 20px; */
+  width: 100%;
+  padding-left: 25px;
+  outline: none;
+  border-radius: 6px;
+  border: 1px solid rgb(170, 169, 169);
+  border-top-width: 2px;
+  transition: all 0.6s ease-in-out;
+}
+
+input#available_schedule {
+  margin-top: 0%!important;
+}
+
+div.city-droplist, div.available-schedule {
+  margin-top: 1rem;
+}
+
 .logo h1 {
   cursor: pointer;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 h2 {
@@ -350,7 +373,8 @@ h3 {
 }
 
 input,
-textarea {
+textarea,
+select {
   background-color: #eee;
   border: none;
   padding: 12px 15px;
@@ -360,8 +384,10 @@ textarea {
 }
 
 input:focus,
-textarea:focus {
-  outline: 1px solid;
+textarea:focus,
+select:focus,
+i:focus {
+outline: 1px solid;
 }
 
 button {

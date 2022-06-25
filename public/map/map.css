@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+}
+#map {
+    width: 750px;
+    height: 450px;
+    margin: auto;
+    border-radius: 0.5rem;
+}
+
+.profile-picture {
+    height: 4rem;
+    display: block;
+    margin: auto;
+    padding: 0.5rem 0;
+    border-radius: 25%;
+}
+
+.leaflet-popup-content-wrapper{
+    text-align: center;
+}
+
+.leaflet-popup-content-wrapper input{
+    cursor: pointer;
+    background-color: cornflowerblue;
+    border: 0.5px solid black;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    transition: all 100ms ease-in;
+    margin-top: 0.5rem;
+}
+
+.leaflet-popup-content-wrapper input:hover{
+    background-color: crimson;
+    transform: scale(1.025);
+    
+}

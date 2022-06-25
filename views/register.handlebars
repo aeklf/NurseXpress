@@ -1,0 +1,105 @@
+<navbar class="navbar">
+    <div class="logo">
+        <h1>NurseXpress</h1>
+    </div>
+
+    <div class="navlinks">
+        <a href="/" class="navLink">Home</a>
+        <a class="navLink" id="popup-login">Log In/Register</a>
+        <div class="log-container popup-form" id="popup-form">
+            <div class="titles">
+                <div class="title login">Login</div>
+            </div>
+            <div class="container-forms">
+                <div class="inner-form">
+                    <form action="/api/users/login" class="login" id="login" method="POST" autocomplete="on">
+                        <input type="text" class="field" name="email" placeholder="Email" required>
+                        <input type="password" class="field" name="password" placeholder="Password" required>
+                        <div class="forgot-pwd"><a href="#">Forgot password?</a></div>
+                        <input type="submit" class="field" value="Login">
+                        <div class="register-link">Not a member? <a href="/api/users/register"> Register now</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <a href="/about" class="navLink">About</a>
+        <a href="/contact" class="navLink">Contact</a>
+    </div>
+</navbar>
+<!-- Form registers -->
+<section>
+    <div class="log-container">
+
+        <div class="title">Register as:</div>
+
+
+        <div class="container-forms">
+            <div class="slider">
+                <input type="radio" name="slider-option" id="user" checked>
+                <input type="radio" name="slider-option" id="nurse">
+                <label for="user" class="sliding user">User</label>
+                <label for="nurse" class="sliding nurse">Nurse</label>
+                <div class="tab-slider"></div>
+            </div>
+
+            <div class="inner-form">
+                <!-- User Form -->
+                <form class="user-form" id="user-form" action="/api/users/register" method="POST" autocomplete="on">
+                    <input name="first_name" type="text" placeholder="First Name" required>
+                    <input name="last_name" type="text" placeholder="Last Name">
+                    <input name="email" type="email" placeholder="Email" required>
+                    <input name="phone_number" type="tel" placeholder="Phone Number">
+                    <div class="city-droplist">
+                        <label name="" for="location" aria-placeholder="location">Location:</label>
+                        <select name="city_id" id="city_name" class="city-name" placeholder="Ciudad" required>
+                            {{!-- options added via JS --}}
+                        </select>
+                    </div>
+                    <input name="street_name_and_number" type="text" placeholder="Street Name, Number" required>
+                    <input name="zipcode" type="number" maxlength="5" placeholder="ZIP Code"
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                        required>
+                    <div class="show-password"><input name="password" id="user-password" type="password"
+                            placeholder="Password" onkeyup='verify();' required>
+                        <i class="far fa-eye" id="show-user-password"></i>
+                    </div>
+                    <input id="user-verify" type="password" placeholder="Verify Password" onkeyup='verify();' required>
+                    <span id='user-message'></span>
+                    <input type="submit" id="new-user" value="Register">
+                </form>
+                <!-- Nurse Form -->
+                <form class="nurse-form" id="nurse-form" action="../employees/register" method="post" autocomplete="on">
+                    <input name="first_name" type="text" placeholder="First Name" required>
+                    <input name="last_name" type="text" placeholder="Last Name">
+                    <input name="email" type="email" placeholder="Email" required>
+                    <input name="phone_number" type="tel" placeholder="Phone Number">
+                    <div class="city-droplist">
+                        <label name="" for="location">Location:</label>
+                        <select name="city_id" id="city_name_nurse" class="city-name" placeholder="Ciudad" required>
+                            {{!-- options added via JS --}}
+                        </select>
+                    </div>
+                    <div class="available-schedule">
+                        <label for="available_schedule">Available date</label>
+                        <input type="date" id="available_schedule" name="available_schedule" placeholder="date">
+                    </div>
+                    <div class="show-password"><input name="password" id="nurse-password" type="password"
+                            placeholder="Password" onkeyup='verify();' required>
+                        <i class="far fa-eye" id="show-nurse-password"></i>
+                    </div>
+                    <input name="verify_password" id="nurse-verify" type="password" placeholder="Verify Password"
+                        onkeyup='verify();' required>
+                    <span id='nurse-message'></span>
+                    <input type="submit" id="new-nurse" value="Register">
+                </form>
+            </div>
+        </div>
+                <div class="register-link">Already a Member? <a href="/login"> Login now</a> </div>
+    </div>
+
+    </div>
+</section>
+
+
+<script src="/js/register.js"></script>

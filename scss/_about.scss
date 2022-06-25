@@ -1,0 +1,23 @@
+#aboutPage {
+    color: aliceblue;
+    margin-top: 70px;
+    max-width: 700px;
+    max-height: 500px;
+
+    .about {
+            justify-content: center;
+            color: aliceblue;
+        }
+    
+        #aboutText {
+            justify-content: center;
+            text-align: center;
+        }
+    
+        #aboutImg {
+            max-width: 650px;
+            max-height: fit-content;
+            justify-content: center;
+        }
+}
+

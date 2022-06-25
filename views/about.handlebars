@@ -1,0 +1,40 @@
+<navbar class="navbar">
+    <div class="logo">
+        <h1>NurseXpress</h1>
+    </div>
+
+    <div class="navlinks">
+        <a href="/" class="navLink">Home</a>
+        <a class="navLink" id="popup-login">Log In/Register</a>
+        <div class="log-container popup-form" id="popup-form">
+            <div class="titles">
+                <div class="title login">Login</div>
+            </div>
+            <div class="container-forms">
+                <div class="inner-form">
+                    <form action="/api/users/login" class="login" id="login" method="POST" autocomplete="on">
+                        <input type="text" class="field" name="email" placeholder="Email" required>
+                        <input type="password" class="field" name="password" placeholder="Password" required>
+                        <div class="forgot-pwd"><a href="#">Forgot password?</a></div>
+                        <input type="submit" class="field" value="Login">
+                        <div class="register-link">Not a member? <a href="/api/users/register"> Register now</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <a href="/about" class="navLink">About</a>
+        <a href="/contact" class="navLink">Contact</a>
+    </div>
+</navbar>
+
+<section id="aboutPage" class="container">
+    <div class="about">
+        <h1>About Us</h1>
+        <p id="aboutText">We're a web-based service dedicated to helping nurses find freelance employment by connecting
+            them with clients seeking special medical assisstance at home.</p>
+        <img src="../assets/images/nurse01.jpg" id="aboutImg">
+    </div>
+</section>
+
+<script src="/js/index.js"></script>

@@ -1,0 +1,153 @@
+// Pop up Login
+.popup-form {
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    width: 30%;
+    display: none;
+}
+
+
+// User and Nurse Register Forms
+.log-container {
+    background: white;
+    box-shadow: 0px 25px 35px rgba(0, 0, 0, 0.3);
+    margin: auto 150px;
+    padding: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+
+        .title {
+            width: 100%;
+            font-size: 30px;
+        }
+    
+    .container-forms {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .slider {
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        margin: 15px 0px;
+        border: 1px solid rgb(170, 169, 169);
+        border-radius: 6px;
+        position: relative;
+    }
+}
+
+.container-forms {
+    .inner-form {
+        width: 200%;
+
+        .nurse-form{
+            display:none;
+        }
+            form {
+                width: 50%;
+                    input {
+                        height: 50px;
+                        margin-top: 20px;
+                        width: 100%;
+                        padding-left: 25px;
+                        outline: none;
+                        border-radius: 6px;
+                        border: 1px solid rgb(170, 169, 169);
+                        border-top-width: 2px;
+                        transition: all 0.6s ease-in-out;
+            
+                        &[type="submit"] {
+                            color: white;
+                            font-size: 18px;
+                            background: linear-gradient(to right,
+                                    $green-pastel,
+                                    #0de387,
+                                    #4bc0c8);
+                            border: none;
+                            cursor: pointer;
+                        }
+            
+                        &:focus {
+                            border-color: #4bc0c8;
+                        }
+                    }
+            
+                    .forgot-pwd {
+                        text-align: left;
+                    }
+            
+                    .register-link {
+                        margin-top: 15px;
+                    }
+            
+                    .user-type {
+                        display: flex;
+                        justify-content: space-evenly;
+                    }
+                }
+    }
+}
+
+.slider{
+
+    .sliding{
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+        z-index: 1;
+        color: white;
+    }
+
+    .tab-slider {
+        position: absolute;
+        left: 0;
+        z-index: 0;
+        background:linear-gradient(to right,
+                $green-pastel,
+                #0de387,
+                #4bc0c8);
+                height: 100%;
+                width: 50%;
+        border-radius: 6px;
+        transition: all 0.3s ease-out;
+    }
+
+    .nurse {
+        color: black;
+    }
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+#nurse:checked {
+    ~ .tab-slider{
+    left: 50%;
+    
+    }
+    ~ .nurse{
+        color: white;
+    }
+    ~ .user {
+        color: black;
+    }
+}
+
+// Show password icon
+#show-user-password, #show-nurse-password {
+    cursor: pointer;
+}
+
+.show-password {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    i{
+        position:relative;
+    }  
+}

@@ -1,0 +1,120 @@
+// Variables
+$green-pastel: #97dd9c;
+$green-neon: #0de387;
+$green-aqua: #4bc0c8;
+$alice: aliceblue;
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+//Styling for webkit and document tags
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    place-items: center;
+    scroll-behavior: smooth;
+    justify-content: space-between;
+    margin: 0;
+    background: linear-gradient(to right, $green-pastel, $green-neon, $green-aqua);
+        background-size: 400% 400%;
+        animation: Gradient 15s ease infinite;
+}
+
+
+a {
+    text-decoration: none;
+    margin: 1rem 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8125rem;
+    letter-spacing: 1px;
+}
+
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+h3 {
+    font-weight: 600;
+    color: #97dd9c;
+    font-size: 1.825rem;
+    margin: 1.3rem 0;
+}
+
+p {
+    font-size: 0.9rem;
+    margin: 1rem 0;
+    line-height: 1.5;
+}
+
+input,
+textarea,
+select {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    font-size: 0.8rem;
+    &:focus {
+        outline: 1px solid;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+i:focus {
+    outline: 1px solid;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: $green-aqua;
+    color: $green-aqua;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    cursor: pointer;
+
+    &:hover {
+            opacity: 0.7;
+        }
+}
+
+//Imports
+@import 'home';
+@import 'navbar';
+@import 'services';
+@import 'login';
+@import 'about';
+@import 'contact';
+@import 'listing';
+@import 'agenda';
+@import 'media';
