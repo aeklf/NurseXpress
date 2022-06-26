@@ -11,12 +11,12 @@ const appointmentsData = [
     //     "location": "Mexico City"
     // },
     {
-        "employee_id": 1,
-        "user_id": 1,
-        "service_id": 1,//Aqui debe ir el price del service
+        "employee_id": 4,
+        "user_id": 4,
+        "service_id": 4,//Aqui debe ir el price del service
         "date": "6/20/2022",
         "hour": "02:00:00",
-        "location_id": 1
+        "location_id": 4
     }
 ];
 
