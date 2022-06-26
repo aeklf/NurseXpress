@@ -1,8 +1,13 @@
 # SecondProject
 
-Second Bootcamp Project - Title
+Second Bootcamp Project - NurseXpress
 
 ## About
+
+NurseXpress is a platform designed to enable freelance medical assisstance.
+It connects clients to registered nurses and allows them to schedule a meeting in their homes for a variety of services.
+
+Built with HTML, CSS, JS and supported by SCSS, MySQL, and Bootstrap.
 
 ## User Story
 
@@ -23,3 +28,19 @@ THEN I can see my scheduled appointments
 
 
 ## Technical Criteria
+
+## Contributors
+
+Andrea Kalife
+Angel Mondragon
+Camila Zagal
+Christian Nuñez
+Hector Guevara
+Kevin Ramirez
+Klaus Cedillo
+Mario Mendoza
+Richard Guarneri
+
+##
+
+Available on GitHub pages: https://aeklf.github.io/NurseXpress/
