@@ -513,37 +513,13 @@ input[type=radio] {
   .left-container {
     display: none;
   }
+
   .lg-view {
     display: none;
-  }
-  /*Added responsive for pop-Up*/
-  .responsive-popUp{
-    width: 55%
   }
 }
 @media only screen and (min-width: 600px) {
   .sm-view {
     display: none;
   }
-}
-/*Responsive for logIn Pop-Up*/
-@media only screen and (max-width: 485px) {
-  .responsive-popUp{
-    width: 67%
-  }
-
-  .log-container{
-    margin: auto 75px;
-  }
-}
-/*Responsive for logIn Pop-Up*/
-@media only screen and (max-width: 380px) {
-  .responsive-popUp{
-    width: 75%
-  }
-
-  .log-container{
-    margin: auto 50px;
-  }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
