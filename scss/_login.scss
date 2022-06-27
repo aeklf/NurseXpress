@@ -3,7 +3,7 @@
     position: fixed;
     z-index: 2;
     right: 0;
-    width: 30%;
+    width: 50%;
     display: none;
 }
 
@@ -48,7 +48,7 @@
         }
             form {
                 width: 50%;
-                    input {
+                    input, select {
                         height: 50px;
                         margin-top: 20px;
                         width: 100%;

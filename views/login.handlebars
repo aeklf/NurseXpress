@@ -1,6 +1,8 @@
 <navbar class="navbar">
     <div class="logo">
-        <h1>NurseXpress</h1>
+        <a href="/">
+            <h1 class="navLink">NurseXpress</h1>
+        </a>
     </div>
 
     <div class="navlinks">
@@ -11,16 +13,15 @@
                 <div class="title login">Login</div>
             </div>
             <div class="container-forms">
-                <div class="inner-form">
-                    <form action="/api/users/login" class="login" id="login" method="POST" autocomplete="on">
+                <div class="inner-form container-fluid">
+                    <form action="/api/users/login" class="login container-forms" id="login" method="POST"
+                        autocomplete="on">
                         <input type="text" class="field" name="email" placeholder="Email" required>
                         <input type="password" class="field" name="password" placeholder="Password" required>
                         <div class="forgot-pwd"><a href="#">Forgot password?</a></div>
-                        
                         <input type="submit" class="field" value="Login">
                         <div class="register-link">Not a member? <a href="/api/users/register"> Register now</a>
                         </div>
-                        <div class="">{{error}}</div>
                     </form>
                 </div>
             </div>

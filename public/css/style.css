@@ -151,6 +151,9 @@ button:hover {
 .logo h1 {
   cursor: pointer;
 }
+.logo a:link {
+  text-decoration: none;
+}
 
 .navLinks {
   display: flex;
@@ -309,7 +312,7 @@ button:hover {
   position: fixed;
   z-index: 2;
   right: 0;
-  width: 30%;
+  width: 50%;
   display: none;
 }
 
@@ -348,7 +351,7 @@ button:hover {
 .container-forms .inner-form form {
   width: 50%;
 }
-.container-forms .inner-form form input {
+.container-forms .inner-form form input, .container-forms .inner-form form select {
   height: 50px;
   margin-top: 20px;
   width: 100%;
@@ -359,14 +362,14 @@ button:hover {
   border-top-width: 2px;
   transition: all 0.6s ease-in-out;
 }
-.container-forms .inner-form form input[type=submit] {
+.container-forms .inner-form form input[type=submit], .container-forms .inner-form form select[type=submit] {
   color: white;
   font-size: 18px;
   background: linear-gradient(to right, #97dd9c, #0de387, #4bc0c8);
   border: none;
   cursor: pointer;
 }
-.container-forms .inner-form form input:focus {
+.container-forms .inner-form form input:focus, .container-forms .inner-form form select:focus {
   border-color: #4bc0c8;
 }
 .container-forms .inner-form form .forgot-pwd {
