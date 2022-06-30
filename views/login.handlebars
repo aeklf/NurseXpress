@@ -7,8 +7,8 @@
 
     <div class="navlinks">
         <a href="/" class="navLink">Home</a>
-        <a class="navLink" id="popup-login">Log In/Register</a>
-        <div class="log-container popup-form" id="popup-form">
+        <a href="#" class="navLink" id="popup-login">Log In/Register</a>
+        <!-- <div class="log-container popup-form" id="popup-form">
             <div class="titles">
                 <div class="title login">Login</div>
             </div>
@@ -25,7 +25,7 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </div> -->
         <a href="/about" class="navLink">About</a>
         <a href="/contact" class="navLink">Contact</a>
     </div>
@@ -33,13 +33,13 @@
 
 <!--Login form-->
 <section>
-    <div class="log-container">
+    <div class="container log-container">
         <div class="titles">
             <div class="title login">Login</div>
         </div>
         <div class="container-forms">
             <div class="inner-form">
-                <form action="#" class="login" id="login-main" method="post" enctype="multipart/form-data" autocomplete="on">
+                <form action="/api/users/login" class="login" id="login" method="post" enctype="multipart/form-data" autocomplete="on">
                     <input type="text" class="field" placeholder="Email" required>
                     <input type="password" class="field" placeholder="Password" required>
                     <div class="forgot-pwd"><a href="#" >Forgot password?</a></div>
